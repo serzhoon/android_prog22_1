@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Регистрация</string>
+    <string name="teachers_title">Список преподавателей</string>
+    <string-array name="teachers_list">
+        <item>Иванов Иван Иванович</item>
+        <item>Петров Петр Петрович</item>
+        <item>Сидорова Мария Александровна</item>
+    </string-array>
+</resources>

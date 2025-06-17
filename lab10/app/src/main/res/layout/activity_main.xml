@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Раздел для управления Wi-Fi -->
+    <LinearLayout
+        android:id="@+id/wifiSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время включения Wi-Fi:"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/wifiOnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="ЧЧ:ММ"
+                android:inputType="time"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время выключения Wi-Fi:"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/wifiOffTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="ЧЧ:ММ"
+                android:inputType="time"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setWifiScheduleButton"
+            android:onClick="setWifiSchedule"
+            android:text="Установить расписание Wi-Fi"/>
+    </LinearLayout>
+
+    <!-- Раздел для добавления задач -->
+    <LinearLayout
+        android:id="@+id/tasksSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/wifiSection">
+
+        <EditText
+            android:id="@+id/toDoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Заголовок задачи"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/toDoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Описание задачи"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/toDoTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Время выполнения (ЧЧ:ММ)"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="time"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTaskButton"
+            android:onClick="addTaskClick"
+            android:text="Добавить задачу"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Список задач:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <ListView
+            android:id="@+id/tasksList"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

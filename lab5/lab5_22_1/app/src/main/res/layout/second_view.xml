@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите уровень сложности"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/rbtn_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Легкий" />
+
+        <RadioButton
+            android:id="@+id/rbtn_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Средний" />
+
+        <RadioButton
+            android:id="@+id/rbtn_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сложный" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="Сохранить" />
+
+</RelativeLayout>
