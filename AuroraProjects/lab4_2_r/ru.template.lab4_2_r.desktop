@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.template.lab4_2_r
+Exec=/usr/bin/ru.template.lab4_2_r
+Name=lab4_2_r
+Name[ru]=lab4_2_r
+
+[X-Application]
+Permissions=Audio;Bluetooth;Camera;Internet;Location;NFC;UserDirs
+OrganizationName=ru.template
+ApplicationName=lab4_2_r
+ExecDBus=/usr/bin/ru.template.lab4_2_r

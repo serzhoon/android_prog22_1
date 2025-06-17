@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.template.lab2_3
+Exec=/usr/bin/ru.template.lab2_3
+Name=lab2_3
+Name[ru]=lab2_3
+
+[X-Application]
+Permissions=
+OrganizationName=ru.template
+ApplicationName=lab2_3
+ExecDBus=/usr/bin/ru.template.lab2_3
